@@ -1,0 +1,394 @@
+
+print("Alios Montesko")
+print('o----')
+print(' ||||')
+print('*' * 10)
+
+
+#: Variables
+
+
+price = 10
+print(price)
+price = 20
+print(price)
+
+name = 'John Smith'
+Age = 20
+is_new = True
+
+
+
+name = input('What is your name?')
+favourite_color = input('What is your favourite color?')
+print(name + ' likes ' + favourite_color)
+
+'''
+birth_year = input('Birth year')
+print(type(birth_year))
+age = 2024 - int(birth_year)
+print(type(age))
+print(age)
+'''
+
+'''
+your_weight = input('What is your weight in pounds: ?')
+weight_in_kg = 0.5358 * int(your_weight)
+print(weight_in_kg)
+'''
+
+course = '''
+Hi Samuel. How are you doing?
+
+This is our first email to you regarding your job application.
+
+Thank you!
+The Support Team.
+
+print(course)
+'''
+
+'''
+name = 'Python for Beginners'
+print(name[1:-1])
+
+# Formatted Strings
+first = 'Samuel'
+last = 'Musyoki'
+message = f'{first} [{last}] is a coder'
+print(message)
+'''
+
+'''course = 'I want to stop procrastinating'
+print(course.replace('stop', 'start'))
+print('want' in course)
+print('myself' in course)
+'''
+#: ARITHMETIC OPERATIONS
+#: Operator precedence follows mathematical rules
+#: i.e Parenthesis, Exponentiation. multiplication or division, addition or subtraction
+'''print(10/3)
+print(10//3)
+print(10%3)
+print(10**3)
+print(10*3)
+
+
+x = 10
+x += 3 # Augmented assignment operator
+x -= 3
+print(x)
+
+x = 2.9
+print(abs(x)) # abs = absolute
+
+import math
+print(math.floor(x))
+'''
+
+# CONDITIONAL STATEMENTS
+'''
+is_hot = False
+is_cold = True
+
+if is_hot:
+    print("It's a hot day")
+    print("Drink Plenty of Water")
+elif is_cold:
+    print("It's a cold day")
+    print("Wear warm clothes")
+else:
+    print("It's a lovely day")
+print("Enjoy your day")
+'''
+
+# QTN
+'''
+price = 1000000
+has_good_credits = True
+
+if has_good_credits:
+    down_payment = 0.1 * price
+else:
+    down_payment = 0.2 * price
+print("Your down payment is " + '$' + str(down_payment))
+'''
+
+# LOGICAL OPERATORS: and( Executed when both statements are true). or(Executed when either of the statements are true)
+'''
+has_high_income = False
+has_good_credits = True
+
+if has_high_income or has_good_credits:
+    print("Eligible for a loan")
+
+
+temperature = 30
+
+if temperature <= 30:
+    print("It's a hot day")
+else:
+    print("It's a cold day")
+'''
+'''
+name = "John Smith"
+
+if len(name) < 3:
+    print("name must be atleast 3 characters")
+elif len(name) > 50:
+    print("name must be atleast 50 characters")
+else:
+    print("name looks good")
+
+weight = int(input('Weight: '))
+unit = input('(L)bs or (K)g: ')
+if unit.upper() == 'L':
+    converted = weight * 0.45
+    print(f"You are{converted} kilos")
+else:
+    converted = weight / 0.45
+    print(f"You are{converted} pounds")
+'''
+
+#LOOPS
+'''
+i = 1
+while i <= 5:
+    print('*' * i)
+    i += 1
+print('Done')
+
+
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count <= guess_limit:
+    guess = int(input('Guess: '))
+    guess_count += 1
+    if guess == secret_number:
+        print('You won!')
+        break
+else:
+    print('Sorry, you lost!')
+'''
+
+'''
+# GAME
+command = ""
+started = False
+while command != "quit":
+    command = input(">")
+    if command == "start":
+        if started:
+            print("Car is already started")
+        else:
+            started = True
+            print("Car started")
+    elif command == "stop":
+        if not started:
+            print("Car is already stopped!")
+        else:
+            started = False
+            print("Car stopped")
+    elif command == "help":
+        print("""
+start - to start the car
+stop - to stop the car
+quit - to quit
+        """)
+    elif command == "quit":
+        break
+    else:
+        print("Invalid command")
+'''
+
+#FOR LOOP
+'''
+for item in range(1, 10, 2):
+    print(item)
+
+prices = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+total = 0
+for price in prices:
+    total += price
+print(f"Total: {total}")
+'''
+
+# NESTED LOOPS
+'''
+for x in range(4):
+    for y in range(3):
+        print(f'({x}, {y})')
+
+
+
+numbers = [1,1,1,1,5]
+for number in numbers:
+    print('*' * number)
+
+names = ['John', 'Smith', 'Mary', 'Sam', 'Rita']
+names.reverse()
+names[0] = 'Faith'
+print(names[2:])
+
+# PROGRAM TO CHECK THE LARGEST OF NUMBERS
+numbers = [3, 6, 15, 2, 8, 4]
+max = numbers[0]
+for number in numbers:
+    if number > max:
+        max = number
+print(max)
+'''
+
+# 2-D LISTS IN PYTHON
+
+'''
+[
+    1, 2, 3,
+    4, 5, 6,
+    7, 8, 9
+]
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+#for row in matrix:
+ #   for item in row:
+  #      print(item)
+
+print(matrix[0][1]) # Accesses the element in the first row and the second column
+'''
+
+# LISTS
+'''
+numbers = [1, 2, 3, 13, 4, 6, 6, 12, 5, 6, 15, 7, 8, 9, 11]
+numbers.append(10)
+print(numbers.count(6))
+numbers.sort()
+numbers.reverse()
+print(numbers)
+
+
+# REMOVING DUPLICATES FROM NUMBERS
+numbers = [0, 1, 2, 3, 11, 2, 4, 5, 11, 6, 7, 2, 8, 9, 10]
+uniques = []
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
+print(uniques)
+'''
+
+#TUPLES - They are immutable (You cannot modify or change them)
+'''
+numbers = (1, 2, 3)
+print(numbers[0])
+
+# UNPACKING
+coordinates = (1, 2, 3)
+x , y, z = coordinates
+print(x)
+'''
+
+# DICTIONARIES - Storing information that comes as key value pairs.
+'''
+customer = {
+    'name': 'John Smith',
+    'age': 30,
+    'is_verified': True
+}
+customer["birthdate"] = "January 1980"
+print(customer['birthdate'])
+
+
+phone = input('Enter your phone number: ')
+digits_mapping = {
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four"
+}
+output = ""
+for ch in phone:
+    output += digits_mapping.get(ch, "!") + " "
+print(output)
+
+'''
+
+#FUNCTIONS
+'''
+def greet_user():
+    print("Hi there")
+    print('Welcome onboard')
+
+
+print("Start")
+greet_user()
+print("Finish")
+
+
+def square(number):
+    print(number * number)
+print(square(5))
+
+# EXCEPTION
+try:
+    age = int(input("Enter your age: "))
+    income = 20000
+    risk = income / age
+    print(age)
+except ZeroDivisionError:
+    print("You can't divide by zero")
+except ValueError:
+    print("Invalid age")
+
+# CLASSES
+class Point:
+    def move(self):
+        print("move")
+    def draw(self):
+        print("draw")
+
+point1 = Point()
+point1.draw()
+
+
+# INHERITANCE
+# Inheritance is a mechanism for re-using code
+
+
+class Mammal:
+    def walk(self):
+        print("walk")
+
+
+class Dog(Mammal):
+    def bark(self):
+        print("bark")
+
+
+class Cat:
+    def be_annoying(self):
+        print('be_annoying')
+
+cat1 = Cat()
+cat1.be_annoying()
+
+dog1 = Dog()
+dog1.walk()
+
+
+# MODULES
+# A module is a file with some Python code
+
+def lbs_to_kg(weight):
+    return weight * 0.45
+
+
+def lbs_to_kg(weight):
+    return weight / 0.45
+'''
+
+import ecommerce.shipping
+
+ecommerce.shipping.calc_shipping()
